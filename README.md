@@ -1,73 +1,126 @@
-# React + TypeScript + Vite
+# 🚀 WorkNest – SaaS Productivity Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, production-style SaaS dashboard built with **React, TypeScript, Tailwind CSS, and Framer Motion**.
+WorkNest helps teams manage projects, track tasks, and monitor progress with a clean and interactive UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+### 📊 Dashboard
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Task analytics overview (Total, Completed, In Progress)
+* Interactive charts for progress tracking
+* Recent activity feed
 
-## Expanding the ESLint configuration
+### 📁 Projects
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* Project cards with progress indicators
+* Filter & sorting (Active, Completed)
+* Team member avatars
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### ✅ Tasks
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+* Task list with:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+  * Status (Todo, In Progress, Done)
+  * Priority (Low, Medium, High)
+  * Due dates
+* Search and filtering
+* Interactive task modal (view & update)
+
+### 🧩 Kanban Board
+
+* Drag & drop tasks between columns
+* Smooth animations
+* Real-time UI updates (local state)
+
+### ⚙️ Settings
+
+* Profile update form
+* Dark / Light mode toggle
+* Security section UI
+
+### 🔔 UI Enhancements
+
+* Toast notifications
+* Micro-interactions (hover, click, transitions)
+* Fully responsive design
+
+---
+
+## 🛠️ Tech Stack
+
+* **Frontend:** React + TypeScript
+* **Styling:** Tailwind CSS
+* **Animations:** Framer Motion
+* **Drag & Drop:** @dnd-kit
+* **Build Tool:** Vite
+
+---
+
+## 📸 Screenshots
+
+<img width="1913" height="947" alt="{99104FA3-6C77-401D-B1E4-DF52A9E8B0A3}" src="https://github.com/user-attachments/assets/cee1572c-5ce8-4677-b197-86570321d6a1" />
+
+
+---
+
+## ⚙️ Installation
+
+```bash
+# Clone the repo
+git clone https://github.com/Satyam258/WorkNest.git
+
+# Go into project
+cd WorkNest
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🌐 Live Demo
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+👉 https://work-nest-eta.vercel.app
+
+---
+
+## 🎯 Purpose of This Project
+
+This project was built to:
+
+* Practice modern SaaS UI/UX design
+* Strengthen frontend development skills
+* Build a portfolio-ready project
+* Simulate real-world dashboard applications
+
+---
+
+## 🚧 Future Improvements
+
+* Backend integration (Node.js / Express / MongoDB)
+* Authentication system (JWT / OAuth)
+* Real-time updates (WebSockets)
+* Database persistence
+* Role-based access control
+
+---
+
+## 🧑‍💻 Author
+
+**Satyam Singh**
+🔗 [LinkedIn](https://www.linkedin.com/in/satyam-singh-a73349259/)
+💻 [GitHub](https://github.com/Satyam258)
+
+---
+
+## ⭐ Show Your Support
+
+If you like this project, give it a ⭐ on GitHub!
+
+---
