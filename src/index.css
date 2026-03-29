@@ -1,0 +1,64 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  color-scheme: light;
+  --wn-bg: #f0f1f6;
+  --wn-surface: #ffffff;
+  --wn-elevated: #e8e9f0;
+  --wn-border: #d8dae5;
+  --wn-muted: #64748b;
+  --wn-text: #0f172a;
+  --wn-accent: #9333ea;
+  --wn-accent-dim: rgba(147, 51, 234, 0.12);
+  --wn-accent-glow: rgba(147, 51, 234, 0.38);
+}
+
+html.dark {
+  color-scheme: dark;
+  --wn-bg: #16171d;
+  --wn-surface: #1f2028;
+  --wn-elevated: #252630;
+  --wn-border: #2e303a;
+  --wn-muted: #9ca3af;
+  --wn-text: #f3f4f6;
+  --wn-accent: #c084fc;
+  --wn-accent-dim: rgba(192, 132, 252, 0.12);
+  --wn-accent-glow: rgba(192, 132, 252, 0.35);
+}
+
+@theme {
+  --color-wn-bg: var(--wn-bg);
+  --color-wn-surface: var(--wn-surface);
+  --color-wn-elevated: var(--wn-elevated);
+  --color-wn-border: var(--wn-border);
+  --color-wn-muted: var(--wn-muted);
+  --color-wn-text: var(--wn-text);
+  --color-wn-accent: var(--wn-accent);
+  --color-wn-accent-dim: var(--wn-accent-dim);
+  --color-wn-accent-glow: var(--wn-accent-glow);
+  --font-sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+}
+
+html {
+  transition:
+    background-color 0.28s ease,
+    color 0.28s ease;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans, system-ui, sans-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--wn-bg);
+  color: var(--wn-text);
+  transition:
+    background-color 0.28s ease,
+    color 0.28s ease;
+}
+
+#root {
+  min-height: 100svh;
+}
