@@ -93,8 +93,7 @@ npm run dev
 
 ## 🌐 Live Demo
 
-👉 https://work-nest-eta.vercel.app
-
+👉 https://work-nest-dashboard.vercel.app
 ---
 
 ## 🎯 Purpose of This Project
